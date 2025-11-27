@@ -1,0 +1,17 @@
+<template>
+  <div class="transaction-history">
+    <h2>Transaction History</h2>
+
+    <div class="placeholder">
+      <div class="placeholder-icon">📊</div>
+      <p class="placeholder-text">Implement the transaction list here</p>
+      <p class="placeholder-hint">Display transactions with type, amount, description, and timestamp</p>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+</script>
+
+<style scoped>
+</style>

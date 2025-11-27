@@ -1,0 +1,25 @@
+{
+  "name": "vue-banking",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/vue-banking/src",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "defaultConfiguration": "development",
+      "options": {
+        "command": "nuxt dev",
+        "cwd": "apps/vue-banking"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "outputs": ["{projectRoot}/.output"],
+      "defaultConfiguration": "production",
+      "options": {
+        "command": "nuxt build",
+        "cwd": "apps/vue-banking"
+      }
+    }
+  }
+}

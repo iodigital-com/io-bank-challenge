@@ -1,0 +1,17 @@
+<template>
+  <div class="transaction-form">
+    <h2>New Transaction</h2>
+
+    <div class="placeholder">
+      <div class="placeholder-icon">📝</div>
+      <p class="placeholder-text">Implement the transaction form here</p>
+      <p class="placeholder-hint">Add form controls for type, amount, and description</p>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+</script>
+
+<style scoped>
+</style>

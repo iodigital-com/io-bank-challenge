@@ -1,0 +1,42 @@
+{
+  "name": "react-banking",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/react-banking",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "react-banking:build",
+        "dev": true,
+        "port": 3000
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "react-banking:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "react-banking:build:production",
+          "dev": false
+        }
+      }
+    },
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/react-banking"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/react-banking"
+        },
+        "production": {}
+      }
+    }
+  }
+}

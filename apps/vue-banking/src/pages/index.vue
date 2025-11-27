@@ -1,0 +1,97 @@
+<template>
+  <div class="container">
+    <header class="header">
+      <div class="header-title">
+        <img src="/assets/io-logo.svg" alt="iO" class="logo" />
+        <h1>Bank</h1>
+      </div>
+      <div class="balance-display">
+        <span class="balance-label">Current Balance</span>
+        <span class="balance-amount">$0.00</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <TransactionForm />
+      <TransactionHistory />
+    </main>
+  </div>
+</template>
+
+<script setup lang="ts">
+</script>
+
+<style scoped>
+.container {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+.header {
+  background: #0000FF;
+  padding: 2.5rem 2rem;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 255, 0.15);
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+}
+
+.logo {
+  height: 2rem;
+  filter: brightness(0) invert(1);
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.balance-display {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.balance-label {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    grid-template-columns: 400px 1fr;
+  }
+}
+</style>
