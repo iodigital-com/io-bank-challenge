@@ -1,6 +1,7 @@
 {
   "name": "io-bank-challenge",
   "version": "1.0.0",
+  "description": "Multi-framework banking transaction manager interview challenge with Angular, React, and Vue implementations",
   "license": "MIT",
   "scripts": {
     "angular": "nx serve angular-banking",
