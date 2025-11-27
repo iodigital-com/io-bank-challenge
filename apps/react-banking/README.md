@@ -5,6 +5,7 @@ A personal banking transaction manager built with React 19, Next.js, and TypeScr
 ## 🎯 Overview
 
 This application demonstrates modern React development practices including:
+
 - ✅ React 19 with hooks (useState, useContext, useMemo)
 - ✅ Next.js App Router
 - ✅ Context API for state management
@@ -15,12 +16,14 @@ This application demonstrates modern React development practices including:
 ## ✨ Features
 
 ### Core Features
+
 - **Real-time Balance Display** - Shows current account balance with live updates
 - **Transaction Management** - Add deposits and withdrawals with validation
 - **Transaction History** - View all transactions with timestamps
 - **Overdraft Protection** - Prevents withdrawals exceeding available balance
 
 ### Bonus Features
+
 - **Transaction Totals** - Displays total deposits and withdrawals
 - **Color Coding** - Visual distinction using iO's Energetic Blue for deposits
 - **Professional Styling** - Modern, clean design with iO branding
@@ -29,12 +32,13 @@ This application demonstrates modern React development practices including:
 ## 🚀 Quick Start
 
 1. **Start the development server:**
+
 ```bash
 npm run react
 ```
 
 2. **Open your browser:**
-Navigate to `http://localhost:3000/`
+   Navigate to `http://localhost:3000/`
 
 ## 📋 Business Requirements
 
@@ -49,7 +53,6 @@ Navigate to `http://localhost:3000/`
 - Display transaction history (newest first)
 - Show running balance
 - Calculate totals (bonus)
-
 
 ## 💻 Technologies Used
 
